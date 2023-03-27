@@ -1,0 +1,21 @@
+{% extends "blog/base.html" %}
+{% block content %}
+	<center>
+	{%if searched%}
+		<h1>You searched for {{searched}}</h1>
+		<br/>
+			{%for value in values%}
+				{{value}}<br/>
+			{%endfor%}
+		</br>
+	{%else%}
+		<h1>Please search for an order</h1>
+
+	{%endif%}
+	
+
+	</center>
+{% endblock content %}
+
+
+
